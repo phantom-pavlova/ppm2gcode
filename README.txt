@@ -6,15 +6,24 @@ ppm2gcode
 
 to compile use 'make'
 
-to use, get an image, then convert to ppm (convert xxx.jpg xxx.ppm)
+to use, get an image, then convert to ppm 
+eg, with 'convert' from imagemagik:
+ee@ee:>convert xxx.jpg xxx.ppm
 then:
-ee@ee>ppm2gcode xxx.ppm
+ee@ee:>ppm2gcode xxx.ppm
 
 it will ask you for 
 -count - how many samples
 -plot size - final image width in mm (height is according to aspect ratio of original image)
 -render type - 0 for softer tones, 1 for cartoons/strong images
 -filename - zzz will write to zzz.ngc
+
+for the moment feed rate is 1000-
+- line 267 im main.c
+cutting depth is -30.0mm
+- line 273 in main.c
+
+for the moment they are fixed, to change edit the source
 
 
 
