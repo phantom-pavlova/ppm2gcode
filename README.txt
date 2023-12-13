@@ -4,6 +4,28 @@ ppm2gcode
 
 
 
+to compile use 'make'
+
+to use, get an image, then convert to ppm (convert xxx.jpg xxx.ppm)
+then:
+ee@ee>ppm2gcode xxx.ppm
+
+it will ask you for 
+-count - how many samples
+-plot size - final image width in mm (height is according to aspect ratio of original image)
+-render type - 0 for softer tones, 1 for cartoons/strong images
+-filename - zzz will write to zzz.ngc
+
+
+
+check your output with a gcode sender (ugsplatform, bCNC etc..) before plotting!
+try (plotsize/5)^2 for count, increase/decrease by order of magnitude until you get a good render.
+my plotter is about 2m x 4m, a good image at that size can take days to print. 
+
+
+
+
+
 
 TODO
 .......................
