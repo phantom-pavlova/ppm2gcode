@@ -1,5 +1,8 @@
 /* 
 ppm2gcode
+converts ppm images to gcode plots
+created to check large plotter could print for 4 - 24 hrs
+put on github as not much was out there so I wrote my own one.
 */ 
 
 
@@ -25,7 +28,9 @@ cutting depth is -30.0mm
 
 for the moment they are fixed, to change edit the source
 
-
+note-
+gimp adds a comment before the size field in a ppm, so if using gimp, export as png or jpg or bmp, etc, then 
+ convert with imagemagik's 'convert'
 
 check your output with a gcode sender (ugsplatform, bCNC etc..) before plotting!
 try (plotsize/5)^2 for count, increase/decrease by order of magnitude until you get a good render.
