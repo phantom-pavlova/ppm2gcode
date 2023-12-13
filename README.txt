@@ -51,6 +51,8 @@ still not entirely happy with the variety of square sizes,
 
 why do we loose a few points in optimisation?
 
+fix gimp comments in header.
+
 optmise a bit more for more points? 100 points per tile?
  - if unsure count distance in G0 and G1, if GO is more than 50% you can remove hours from the plot with better tiling or subtile optimisation
  - this is only true for square render, spiral has no G0
