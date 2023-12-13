@@ -1,0 +1,6 @@
+# version before backup was was 2.0
+# major number 
+3:x
+## major update to 3
+#added second render, which is better for images with more tones
+
